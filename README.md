@@ -8,7 +8,6 @@ solbae がつくったゲームのあつまり。
 |---|---|---|
 | [スカイフック・レーサー](games/skyhook-racer/) | 空のコースを走る3Dレース。12台レース・2人プレイ | （Claude のアーティファクトで作成） |
 | [サバイバルバトルX100](games/survival-battle-x100/) | 100人バトルロイヤル。武器500種 | [survival-battleX100](https://github.com/fukofukohnishi-crypto/survival-battleX100) |
-| [INK ARENA](games/ink-arena/) | インクで戦う3Dバトル | [ink-battle](https://github.com/fukofukohnishi-crypto/ink-battle) |
 | [もぐりあん 3D](games/moguri-an-3d/) | おでん・ラーメン経営ゲーム | [keieigame](https://github.com/fukofukohnishi-crypto/keieigame) |
 
 ## しくみ
