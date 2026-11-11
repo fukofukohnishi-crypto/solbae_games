@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>solbae games</title>
+<style>
+:root{--bg:#fff8ef;--card:#fff;--ink:#2b2420;--sub:#6b5f57;--accent:#e8613c;--line:#eadfd3}
+@media (prefers-color-scheme:dark){:root{--bg:#1d1916;--card:#2a2420;--ink:#f5ede6;--sub:#b9aca2;--accent:#ff8a63;--line:#3d342e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,"Hiragino Sans","Yu Gothic",sans-serif;line-height:1.6}
+main{max-width:860px;margin:0 auto;padding:32px 16px 48px}
+h1{font-size:2.2rem;margin:0 0 4px;letter-spacing:.02em}
+.lead{color:var(--sub);margin:0 0 28px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;color:inherit;text-decoration:none;transition:transform .15s,border-color .15s}
+a.card:hover{transform:translateY(-2px);border-color:var(--accent)}
+.emoji{font-size:2.2rem}
+h2{font-size:1.25rem;margin:6px 0 6px}
+.card p{margin:0 0 12px;color:var(--sub);font-size:.95rem}
+.play{color:var(--accent);font-weight:700}
+footer{margin-top:36px;color:var(--sub);font-size:.85rem}
+</style>
+</head>
+<body>
+<main>
+<h1>solbae games</h1>
+<p class="lead">solbae がつくったゲームのあつまり。ブラウザでそのまま遊べます。</p>
+<div class="grid">
+  <a class="card" href="games/survival-battle-x100/">
+    <div class="emoji">⚔️</div>
+    <h2>サバイバルバトルX100</h2>
+    <p>100人で戦うバトルロイヤル。宝箱を壊して全500種の武器を集め、最後の1人を目指す。</p>
+    <span class="play">▶ 遊ぶ</span>
+  </a>
+  <a class="card" href="games/ink-arena/">
+    <div class="emoji">🎨</div>
+    <h2>INK ARENA</h2>
+    <p>インクで戦う3Dバトル。ステージをクリアしてコインを稼ぎ、商店街で装備をそろえよう。</p>
+    <span class="play">▶ 遊ぶ</span>
+  </a>
+  <a class="card" href="games/moguri-an-3d/">
+    <div class="emoji">🍜</div>
+    <h2>もぐりあん 3D</h2>
+    <p>おでん・ラーメン屋を経営する3Dゲーム。具材をそろえて、お店の評判を上げよう。</p>
+    <span class="play">▶ 遊ぶ</span>
+  </a>
+</div>
+<footer>操作はキーボードとマウス。各ゲームは HTML ファイル1つで動きます。</footer>
+</main>
+</body>
+</html>
