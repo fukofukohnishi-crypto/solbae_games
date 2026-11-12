@@ -2,23 +2,29 @@
 
 solbae がつくったゲームのあつまり。
 
-遊ぶ: https://fukofukohnishi-crypto.github.io/solbae_games/ （GitHub Pages を有効にすると開けます）
+## ダウンロードして遊ぶ
 
-| ゲーム | 内容 | 元のリポジトリ |
+1. 遊びたいゲームの「ダウンロード」を開く
+2. 右上の下向き矢印（Download raw file）を押す
+3. 「ファイル」アプリの「ダウンロード」にできたファイルをダブルクリックすると、Chrome で開いて遊べる
+
+| ゲーム | 内容 | ダウンロード |
 |---|---|---|
-| [スカイフック・レーサー](games/skyhook-racer/) | 空のコースを走る3Dレース。12台レース・2人プレイ | （Claude のアーティファクトで作成） |
-| [にじいろパーク](games/nijiiro-park/) | 3D遊園地経営ゲーム | （Claude のアーティファクトで作成） |
-| [サバイバルバトルX100](games/survival-battle-x100/) | 100人バトルロイヤル。武器500種 | [survival-battleX100](https://github.com/fukofukohnishi-crypto/survival-battleX100) |
-| [もぐりあん 3D](games/moguri-an-3d/) | おでん・ラーメン経営ゲーム | [keieigame](https://github.com/fukofukohnishi-crypto/keieigame) |
+| 🏎️ スカイフック・レーサー | 空のコースを走る3Dレース。12台レース・2人プレイ | [skyhook-racer.html](games/skyhook-racer.html) |
+| 🎡 にじいろパーク | 3D遊園地経営ゲーム | [nijiiro-park.html](games/nijiiro-park.html) |
+| ⚔️ サバイバルバトルX100 | 100人バトルロイヤル。武器500種 | [survival-battle-x100.html](games/survival-battle-x100.html) |
+| 🍜 もぐりあん 3D | おでん・ラーメン経営ゲーム | [moguri-an-3d.html](games/moguri-an-3d.html) |
 
-## しくみ
+- ファイル1つで動きます。ネットにつながっていなくても遊べます。
+- セーブデータはそのパソコンのブラウザに保存されます。
 
-- 各ゲームは `games/<名前>/index.html` の1ファイルで完結しています。
-- 外部サイトから読み込むものはほぼありません（学校など、フィルタのある環境でも動きやすくするため）。
-  - three.js (r128, MIT License) はファイル内に埋め込み済み。
-  - フォント（Google Fonts）だけは外部読み込み。読めなくても代わりのフォントで動きます。
-- サバイバルバトルX100 は元リポジトリの `build.sh` で作った1ファイル版です。
+## ブラウザで遊ぶ
 
-## 更新のしかた
+https://fukofukohnishi-crypto.github.io/solbae_games/
 
-元のリポジトリでゲームを直したら、このリポジトリの `games/` の中のファイルを差し替えます。
+## しくみ（作る人向け）
+
+- 各ゲームは `games/<名前>.html` の1ファイルで完結しています。`games/<名前>/` は前のURL用の転送ページです。
+- three.js (r128, MIT License) はファイル内に埋め込み済み。外部から読むのはフォント（Google Fonts）だけで、読めなくても代わりのフォントで動きます。
+- サバイバルバトルX100 は [survival-battleX100](https://github.com/fukofukohnishi-crypto/survival-battleX100) の `build.sh` で作った1ファイル版、もぐりあん 3D は [keieigame](https://github.com/fukofukohnishi-crypto/keieigame) から。スカイフック・レーサーとにじいろパークは Claude のアーティファクトで作ったもの。
+- 元のゲームを直したら、`games/` の中のファイルを差し替えます。
